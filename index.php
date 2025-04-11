@@ -166,18 +166,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     </div>
     
-    <?php 
-        $Kim = "Kim";
-        $Zab = "Zab";
-        $JL = "JL";
-        $Khyle = "Khyle";
-        $Karl = "Karl";
-        $Frances = "Frances";
-        $names = array("$Kim","$Zab","$JL","$Khyle","$Karl","$Frances");
-        foreach($names as $name) {
-            echo  $name . " ";
-        };
-    ?>
 
    
 </body>

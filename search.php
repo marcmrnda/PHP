@@ -28,11 +28,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="<?php htmlspecialchars("PHP_SELF"); ?>" method="POST">
-    <label for="search">Search Here:</label>
+    <div class="searchContainer">
+    <form class="searchForm" action="<?php htmlspecialchars("PHP_SELF"); ?>" method="POST">
     <input type="text" name="search" id="search" value="<?php echo $search ?>">
     <span class="error"><?php echo $searchErr; ?></span>
     <input type="submit" value="Search">
-</form>
+    </form>
+    </div>
+
 </body>
 </html>
